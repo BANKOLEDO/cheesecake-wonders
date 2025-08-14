@@ -43,7 +43,7 @@ export default function MenuSection() {
       </h2>
 
       <Carousel 
-        className="w-[15rem] sm:w-[25rem] lg:w-[50rem] mx-auto"
+        className="w-[15rem] xs:w-[15rem] xsm:w-[17.5rem] xmd:w-[19rem] sm:w-[25rem] lg:w-[50rem] mx-auto"
         opts={{
           slidesToScroll: {
             xs: 1,
