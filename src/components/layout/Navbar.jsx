@@ -34,7 +34,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex md:flex-row md:justify-between items-centertext-white space-x-8 bg-primary rounded-sm">
+        <div className="hidden md:flex md:flex-row md:justify-between items-centertext-white space-x-8 bg-primary rounded-md shadow-lg">
             <a href="#home" className="nav-item hover-white">
               Home
             </a>
