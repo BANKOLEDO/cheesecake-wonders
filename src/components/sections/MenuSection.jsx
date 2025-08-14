@@ -42,7 +42,16 @@ export default function MenuSection() {
         Our Cheesecake Menu
       </h2>
 
-      <Carousel className="w-[15rem] sm:w-[20rem] lg:w-full mx-auto">
+      <Carousel 
+        className="w-[18rem] sm:w-[25rem] lg:w-[50rem] mx-auto"
+        opts={{
+          slidesToScroll: {
+            xs: 1,
+            sm: 2,
+            lg: 2
+          }
+        }}
+      >
   <CarouselContent>
     {menuItems.map((item, index) => (
       <CarouselItem
