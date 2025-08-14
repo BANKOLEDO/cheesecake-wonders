@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-[100vw] justify-center">
       <HeroSection />
+      <CakeMarquee />
       <AboutSection />
       <CakeMarquee />
       <MenuSection />

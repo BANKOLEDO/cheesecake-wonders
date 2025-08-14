@@ -1,7 +1,6 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 const messages = [
   "Delicious Cheesecake! 🍰",
@@ -14,30 +13,19 @@ const messages = [
 ];
 
 export default function CakeTextMarquee() {
-  const marqueeRef = useRef(null);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    const marqueeWidth = marqueeRef.current?.scrollWidth || 0;
-
-    controls.start({
-      x: [`0%`, `-${marqueeWidth}px`],
-      transition: {
-        repeat: Infinity,
-        duration: marqueeWidth / 50, // adjust speed: bigger width = longer duration
-        ease: "linear",
-        repeatType: "loop",
-      },
-    });
-  }, [controls]);
-
   return (
     <div className="overflow-hidden bg-cream-100 py-4">
       <motion.div
-        ref={marqueeRef}
-        className="inline-flex whitespace-nowrap text-xl font-bold text-gray-800 gap-16"
-        animate={controls}
+        className="flex whitespace-nowrap text-xl font-bold text-gray-800 gap-16 min-w-[200%]"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          repeat: Infinity,
+          duration: 30, // adjust speed
+          ease: "linear",
+          repeatType: "loop",
+        }}
       >
+        {/* Repeat messages to cover the screen twice */}
         {[...messages, ...messages].map((msg, i) => (
           <span key={i}>{msg}</span>
         ))}
