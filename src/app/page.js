@@ -14,7 +14,6 @@ export default function Home() {
       <AboutSection />
       <CakeMarquee />
       <MenuSection />
-      <CakeMarquee />
     </div>
   );
 }
