@@ -10,40 +10,40 @@ import {
 
 const menuItems = [
   {
-    name: "Classic Cheesecake",
-    description: "Rich, creamy, and perfectly smooth.",
+    name: "Lemon Cheesecake",
+    description: "A refreshing lemon cheesecake with a buttery crust, perfect for citrus lovers.",
     price: "$8.99",
-    image: "/images/classic-cheesecake.png"
+    image: "/images/lemon-cheesecake.png"
   },
   {
-    name: "Strawberry Swirl",
-    description: "Velvety cheesecake with a fresh strawberry swirl.",
+    name: "Biscoffs Cheesecake",
+    description: "A delightful blend of Biscoff cookies and creamy cheesecake.",
     price: "$9.99",
-    image: "/images/strawberry-swirl.png"
+    image: "/images/biscoff-cheesecake.png"
   },
   {
-    name: "Chocolate Fudge",
-    description: "Decadent chocolate cheesecake with fudge drizzle.",
+    name: "Chocolate Cheesecake",
+    description: "Rich and creamy chocolate cheesecake with a chocolate cookie crust.",
     price: "$10.50",
-    image: "/images/chocolate-fudge.png"
+    image: "/images/chocolate-cheesecake.png"
   },
   {
-    name: "Blueberry Delight",
-    description: "Tangy blueberries on a creamy cheesecake base.",
+    name: "Blueberry Cheesecake",
+    description: "A classic blueberry cheesecake topped with fresh blueberries and a hint of lemon.",
     price: "$9.50",
-    image: "/images/blueberry-delight.png"
+    image: "/images/blueberry-cheesecake.png"
   },
 ]
 
 export default function MenuSection() {
   return (
-    <section id="menu" className="px-5 py-10 md:px-20">
+    <section id="menu" className="scroll-mt-20 px-5 py-10 md:px-20">
       <h2 className="text-3xl font-bold text-center mb-8 text-primary">
         Our Cheesecake Menu
       </h2>
 
       <Carousel 
-        className="w-[18rem] sm:w-[25rem] lg:w-[50rem] mx-auto"
+        className="w-[15rem] sm:w-[25rem] lg:w-[50rem] mx-auto"
         opts={{
           slidesToScroll: {
             xs: 1,
@@ -63,14 +63,14 @@ export default function MenuSection() {
             <img
               src={item.image}
               alt={item.name}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain"
             />
             <CardHeader>
               <CardTitle>{item.name}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-lg font-semibold text-orange-600">
+              <p className="text-lg font-semibold text-green-600">
                 {item.price}
               </p>
             </CardContent>
