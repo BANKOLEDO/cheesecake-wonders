@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Button } from "../ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import {
   Carousel,
@@ -38,12 +39,12 @@ const menuItems = [
 export default function MenuSection() {
   return (
     <section id="menu" className="scroll-mt-20 px-5 py-10 md:px-20">
-      <h2 className="text-3xl font-bold text-center mb-8 text-primary">
+      <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-primary">
         Our Cheesecake Menu
       </h2>
 
       <Carousel 
-        className="w-[15rem] xs:w-[15rem] xsm:w-[17.5rem] xmd:w-[19rem] sm:w-[25rem] lg:w-[50rem] mx-auto"
+        className="w-[15rem] xs:w-[15rem] xsm:w-[17.5rem] xmd:w-[20rem] sm:w-[25rem]  lg:w-[45rem] mx-auto"
         opts={{
           slidesToScroll: {
             xs: 1,
@@ -66,13 +67,16 @@ export default function MenuSection() {
               className="w-full h-48 object-contain"
             />
             <CardHeader>
-              <CardTitle>{item.name}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
+              <CardTitle className="text-amber-950 font-extrabold">{item.name}</CardTitle>
+              <CardDescription className="text-amber-900 font-semibold ">{item.description}</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-row items-center justify-between gap-2">
               <p className="text-lg font-semibold text-green-600">
                 {item.price}
               </p>
+              <Button size="sm" variant="outline">
+                    Order Now
+              </Button>
             </CardContent>
           </Card>
         </div>

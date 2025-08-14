@@ -18,11 +18,22 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start", // always align top
+      });
+    }
+    setIsOpen(false); // close menu if mobile
+  };
+
   return (
     <nav className="shadow-md bg-background fixed top-0 left-0 w-full px-[0.5rem] md:px-[2rem] lg:px-[8rem] z-50">
       <div className="mx-auto md:mx-0 px-4 py-4 flex justify-between md:justify-between items-center">
         {/* Logo */}
-        <a href="#home">
+        <button onClick={() => scrollToSection("home")}>
           <Image
             src="/images/cheesecake-wonders-logo.png"
             alt="Cheesecake Wonders Logo"
@@ -31,26 +42,26 @@ export default function Navbar() {
             priority
             className="border border-transparent rounded-full"
           />
-        </a>
+        </button>
 
         {/* Desktop Links */}
         <div className="hidden md:flex md:flex-row md:justify-between items-centertext-white space-x-8 bg-primary rounded-md shadow-lg">
-            <a href="#home" className="nav-item hover-white">
-              Home
-            </a>
-            <a href="#about" className="nav-item hover-white">
-              About
-            </a>
-            <a href="#menu" className="nav-item hover-white">
-              Menu
-            </a>
-            <a href="#contact" className="nav-item hover-white">
-              Contact
-            </a>
+          <button onClick={() => scrollToSection("home")} className="nav-item hover-white">
+            Home
+          </button>
+          <button onClick={() => scrollToSection("about")} className="nav-item hover-white">
+            About
+          </button>
+          <button onClick={() => scrollToSection("menu")} className="nav-item hover-white">
+            Menu
+          </button>
+          <button onClick={() => scrollToSection("contact")} className="nav-item hover-white">
+            Contact
+          </button>
         </div>
 
-        <Button className="hidden md:flex" size="sm" variant="outline">
-          <a href="#order">Sign Up</a>
+        <Button className="hidden md:flex" size="sm" variant="outline" onClick={() => scrollToSection("order")}>
+          Sign Up
         </Button>
 
         {/* Mobile Menu Button */}
@@ -82,40 +93,20 @@ export default function Navbar() {
               height={24}
             />
           </button>
-          <a
-            href="#home"
-            onClick={() => setIsOpen(false)}
-            className="nav-item hover-brown "
-          >
+          <button onClick={() => scrollToSection("home")} className="nav-item hover-brown">
             Home
-          </a>
-          <a
-            href="#about"
-            onClick={() => setIsOpen(false)}
-            className="nav-item hover-brown"
-          >
+          </button>
+          <button onClick={() => scrollToSection("about")} className="nav-item hover-brown">
             About
-          </a>
-          <a
-            href="#menu"
-            onClick={() => setIsOpen(false)}
-            className="nav-item hover-brown"
-          >
+          </button>
+          <button onClick={() => scrollToSection("menu")} className="nav-item hover-brown">
             Menu
-          </a>
-          <a
-            href="#contact"
-            onClick={() => setIsOpen(false)}
-            className="nav-item"
-          >
+          </button>
+          <button onClick={() => scrollToSection("contact")} className="nav-item hover-brown">
             Contact
-          </a>
-          <Button
-            size="sm"
-            variant="outline"
-            onClick={() => setIsOpen(false)}
-          >
-            <a href="#order">Sign Up</a>
+          </button>
+          <Button size="sm" variant="outline" onClick={() => scrollToSection("order")}>
+            Sign Up
           </Button>
         </div>
       )}
