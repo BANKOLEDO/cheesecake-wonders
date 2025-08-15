@@ -6,8 +6,8 @@ import ScrollReveal from "@/components/ScrollReveal.client";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-[100vw] justify-center space-y-12">
-      <ScrollReveal id="home" className="scroll-mt-20" delay={0.5}>
+    <div className="flex flex-col w-[100vw] justify-center space-y-12 ">
+      <ScrollReveal delay={0.5}>
         <HeroSection />
       </ScrollReveal>
 
@@ -27,7 +27,7 @@ export default function Home() {
         <MenuSection />
       </ScrollReveal>
 
-      <ScrollReveal delay={0.5}>
+      <ScrollReveal delay={0.4}>
         <CakeMarquee />
       </ScrollReveal>
     </div>
