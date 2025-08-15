@@ -20,6 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="preload" as="image" href="/images/blog-img1.svg" />
+      <link rel="preload" as="image" href="/images/blog-img2.svg" />
+      <link rel="preload" as="image" href="/images/blog-img3.jpg" />
       <body>
         <Navbar />
         <main>{children}</main>
