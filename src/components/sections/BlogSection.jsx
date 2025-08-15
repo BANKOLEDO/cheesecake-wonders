@@ -54,15 +54,22 @@ const blogs = [
 ]
 export default function BlogSection() {
   return (
-    <section id="blog" className="scroll-mt-20 px-4 sm:px-6 md:px-10 lg:px-20 py-10">
+    <section id="blog" className="scroll-mt-20 px-6 sm:px-6 md:px-10 lg:px-20 py-10">
       <h2 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-center mb-8 text-primary">
         Latest Blog Posts
       </h2>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(15rem,1fr))] gap-6 items-stretch">
+      <div className="
+        grid gap-6 items-stretch
+        grid-cols-[minmax(15rem,1fr)]
+        [@media(min-width:650px)]:grid-cols-[repeat(auto-fit,minmax(15rem,1fr))]
+      ">
         {blogs.map((blog, index) => (
           <ScrollReveal key={index} delay={index * 0.15}>
-            <Card className="flex flex-col min-h-[29.3rem] md:min-h-[31rem] lg:min-h-[32rem] xl:min-h-[33rem]">
+            <Card className="
+              flex flex-col min-h-[29.5rem] md:min-h-[31rem] lg:min-h-[32rem] xl:min-h-[33rem]
+              transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:-translate-y-1
+            ">
               <CardHeader>
                 <CardTitle className="text-lg font-semibold">{blog.title}</CardTitle>
                 <CardDescription className="text-sm text-muted-foreground">
@@ -71,12 +78,17 @@ export default function BlogSection() {
               </CardHeader>
               <CardContent className="flex flex-col flex-1">
                 <p className="text-xs text-gray-400 mb-2">{blog.date}</p>
-                <img
-                  src={blog.img}
-                  alt={blog.alt}
-                  className="w-full h-40 sm:h-44 md:h-48 lg:h-52 object-cover rounded-lg mb-4"
-                />
-                <p className="text-sm text-muted-foreground">{blog.content}</p>
+                <div className="overflow-hidden rounded-lg">
+                  <img
+                    src={blog.img}
+                    alt={blog.alt}
+                    className="
+                      w-full h-40 sm:h-44 md:h-48 lg:h-52 object-cover rounded-lg
+                      transition-transform duration-500 hover:scale-110
+                    "
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground mt-4">{blog.content}</p>
               </CardContent>
             </Card>
           </ScrollReveal>
