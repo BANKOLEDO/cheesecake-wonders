@@ -3,6 +3,8 @@ import AboutSection from "@/components/sections/AboutSection";
 import MenuSection from "@/components/sections/MenuSection";
 import CakeMarquee from "@/components/CakeMarquee.client";
 import ScrollReveal from "@/components/ScrollReveal.client";
+import Footer from "@/components/layout/Footer";
+import BlogSection from "@/components/sections/BlogSection";
 
 export default function Home() {
   return (
@@ -30,6 +32,8 @@ export default function Home() {
       <ScrollReveal delay={0.4}>
         <CakeMarquee />
       </ScrollReveal>
+        <BlogSection />
+      <Footer />
     </div>
   );
 }
