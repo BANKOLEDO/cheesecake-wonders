@@ -55,8 +55,8 @@ const blogs = [
 export default function BlogSection() {
   return (
     <section id="blog" className="scroll-mt-20 px-6 sm:px-6 md:px-10 lg:px-20 py-10">
-      <h2 className="text-2xl xs:text-3xl lg:text-4xl font-bold text-center mb-8 text-primary">
-        Latest Blog Posts
+      <h2 className="text-xl xs:text-3xl xmd:text-4xl md:text-5xl 2xl:text-5xl font-bold text-center mb-8 text-primary">
+       Our Latest Blog Posts
       </h2>
 
       <div className="
@@ -77,14 +77,14 @@ export default function BlogSection() {
               transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:-translate-y-1
             ">
               <CardHeader className="flex-none">
-                <CardTitle className="text-lg font-semibold line-clamp-1">{blog.title}</CardTitle>
-                <CardDescription className="text-sm text-muted-foreground line-clamp-2">
+                <CardTitle className="text-lg font-semibold line-clamp-1 text-primary">{blog.title}</CardTitle>
+                <CardDescription className="text-sm  line-clamp-2 text-amber-900 font-semibold">
                   {blog.description}
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col flex-1 justify-between">
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400">{blog.date}</p>
+                  <p className="text-sm text-green-800 font-bold">{blog.date}</p>
                   <div className="overflow-hidden rounded-lg h-[200px]">
                     <img
                       src={blog.img}
@@ -95,7 +95,7 @@ export default function BlogSection() {
                       "
                     />
                   </div>
-                  <p className="text-sm text-muted-foreground line-clamp-4">{blog.content}</p>
+                  <p className="text-sm text-amber-900 font-semibold line-clamp-4">{blog.content}</p>
                 </div>
                 <div className="  flex justify-center">
                   <Button className="w-[12rem]" variant="outline" size="lg">Read More</Button>

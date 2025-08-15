@@ -39,7 +39,7 @@ const menuItems = [
 export default function MenuSection() {
   return (
     <section id="menu" className="scroll-mt-20 px-5 py-10 md:px-20">
-      <h2 className="text-3xl lg:text-4xl font-bold text-center mb-8 text-primary">
+      <h2 className="text-xl xs:text-3xl xmd:text-4xl md:text-5xl 2xl:text-5xl font-bold text-center mb-8 text-primary">
         Our Cheesecake Menu
       </h2>
 
