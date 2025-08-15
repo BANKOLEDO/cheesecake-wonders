@@ -1,54 +1,54 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import ScrollReveal from "@/components/ScrollReveal.client";
-
+import { Button } from "../ui/button";
 // Static blog data with fixed release dates
 const blogs = [
   {
     title: "Cheesecake Recipes",
     description: "Discover our collection of delicious cheesecake recipes that will satisfy your sweet tooth.",
-    img: "/images/cheesecake-recipe.jpg",
+    img: "/images/blog-img1.svg",
     alt: "Cheesecake Recipe",
-    content: "Explore the art of cheesecake making with our step-by-step guides and tips for perfecting your cheesecake creations.",
+    content: "Explore the art of cheesecake making with our step-by-step guides and tips for perfecting your cheesecake creations. From classic New York-style to fruity variations, we have recipes for every cheesecake lover. Satisfy your sweet tooth with our delicious cheesecake recipes.",
     date: "Feb 12, 2023",
   },
   {
     title: "Cheesecake History",
     description: "Uncover the fascinating history of cheesecake, from its ancient origins to modern variations enjoyed worldwide.",
-    img: "/images/cheesecake-history.jpg",
+    img: "/images/blog-img2.svg",
     alt: "Cheesecake History",
-    content: "Journey through time and discover how cheesecake has evolved over the centuries, becoming a beloved dessert in many cultures.",
+    content: "Journey through time and discover how cheesecake has evolved over the centuries, becoming a beloved dessert in many cultures. Did you know that cheesecake dates back to ancient Greece? Learn about its rich history and how it has transformed into the diverse range of flavors and styles we enjoy today.",
     date: "Jul 8, 2024",
   },
   {
     title: "Cheesecake Tips & Tricks",
     description: "Master the cheesecake with professional tips for baking, flavoring, and presentation.",
-    img: "/images/cheesecake-tips.jpg",
+    img: "/images/blog-img3.jpg",
     alt: "Cheesecake Tips",
-    content: "Learn the secrets to making creamy, perfectly baked cheesecakes every time with insider baking techniques.",
+    content: "Learn the secrets to making creamy, perfectly baked cheesecakes every time with insider baking techniques. Start impressing your friends and family with your cheesecake skills. From crust perfection to flavor combinations, our tips will elevate your cheesecake game.",
     date: "Nov 21, 2025",
   },
   {
     title: "Mini Cheesecakes",
     description: "Perfect bite-sized cheesecakes for parties and gatherings.",
-    img: "/images/mini-cheesecake.jpg",
+    img: "/images/blog-img2.svg",
     alt: "Mini Cheesecake",
-    content: "Mini cheesecakes that are easy to serve and fun to enjoy.",
+    content: "Mini cheesecakes that are easy to serve and fun to enjoy. Whether you're hosting a party or just want a small treat, these mini cheesecakes are the perfect solution. With various flavors and toppings, they are sure to be a hit at any gathering.",
     date: "Mar 15, 2023",
   },
   {
     title: "Vegan Cheesecakes",
     description: "Delicious plant-based alternatives that everyone will love.",
-    img: "/images/vegan.jpg",
+    img: "/images/blog-img3.jpg",
     alt: "Vegan Cheesecake",
-    content: "Creamy vegan cheesecakes made with wholesome ingredients.",
+    content: "Creamy vegan cheesecakes made with wholesome ingredients. Healthy and indulgent, these vegan cheesecakes are perfect for those who want to enjoy a guilt-free dessert. Made with cashews, coconut cream, and natural sweeteners, they are both delicious and nutritious.",
     date: "Sep 9, 2024",
   },
   {
     title: "Chocolate Lovers",
-    description: "Indulge in decadent chocolate cheesecake creations.",
-    img: "/images/chocolate.jpg",
+    description: "Indulge in decadent chocolate cheesecake creations. ",
+    img: "/images/blog-img1.svg",
     alt: "Chocolate Cheesecake",
-    content: "Rich, creamy chocolate cheesecakes for the ultimate dessert experience.",
+    content: "Rich, creamy chocolate cheesecakes for the ultimate dessert experience. Every bite is a chocolate lover's dream come true. From classic chocolate to unique flavor combinations, our chocolate cheesecakes are sure to satisfy your cravings.",
     date: "Dec 1, 2025",
   }
 ]
@@ -60,35 +60,46 @@ export default function BlogSection() {
       </h2>
 
       <div className="
-        grid gap-6 items-stretch
-        grid-cols-[minmax(15rem,1fr)]
-        [@media(min-width:650px)]:grid-cols-[repeat(auto-fit,minmax(15rem,1fr))]
+        grid gap-6
+        grid-cols-1 
+        sm:grid-cols-2 
+        lg:grid-cols-3
+        items-stretch 
+        max-w-7xl 
+        mx-auto
       ">
         {blogs.map((blog, index) => (
           <ScrollReveal key={index} delay={index * 0.15}>
             <Card className="
-              flex flex-col min-h-[29.5rem] md:min-h-[31rem] lg:min-h-[32rem] xl:min-h-[33rem]
+              flex flex-col 
+              h-full
+              min-h-[600px]
               transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:-translate-y-1
             ">
-              <CardHeader>
-                <CardTitle className="text-lg font-semibold">{blog.title}</CardTitle>
-                <CardDescription className="text-sm text-muted-foreground">
+              <CardHeader className="flex-none">
+                <CardTitle className="text-lg font-semibold line-clamp-1">{blog.title}</CardTitle>
+                <CardDescription className="text-sm text-muted-foreground line-clamp-2">
                   {blog.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="flex flex-col flex-1">
-                <p className="text-xs text-gray-400 mb-2">{blog.date}</p>
-                <div className="overflow-hidden rounded-lg">
-                  <img
-                    src={blog.img}
-                    alt={blog.alt}
-                    className="
-                      w-full h-40 sm:h-44 md:h-48 lg:h-52 object-cover rounded-lg
-                      transition-transform duration-500 hover:scale-110
-                    "
-                  />
+              <CardContent className="flex flex-col flex-1 justify-between">
+                <div className="space-y-4">
+                  <p className="text-xs text-gray-400">{blog.date}</p>
+                  <div className="overflow-hidden rounded-lg h-[200px]">
+                    <img
+                      src={blog.img}
+                      alt={blog.alt}
+                      className="
+                        w-full h-full object-cover rounded-lg
+                        transition-transform duration-500 hover:scale-110
+                      "
+                    />
+                  </div>
+                  <p className="text-sm text-muted-foreground line-clamp-4">{blog.content}</p>
                 </div>
-                <p className="text-sm text-muted-foreground mt-4">{blog.content}</p>
+                <div className="  flex justify-center">
+                  <Button className="w-[12rem]" variant="outline" size="lg">Read More</Button>
+                </div>
               </CardContent>
             </Card>
           </ScrollReveal>
