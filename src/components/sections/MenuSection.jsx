@@ -39,12 +39,12 @@ const menuItems = [
 export default function MenuSection() {
   return (
     <section id="menu" className="scroll-mt-20 px-5 py-10 md:px-20">
-      <h2 className="text-xl xs:text-3xl xmd:text-4xl md:text-5xl 2xl:text-5xl font-bold text-center mb-8 text-primary">
+      <h2 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-center mb-8 text-primary">
         Our Cheesecake Menu
       </h2>
 
       <Carousel 
-        className="w-[15rem] xs:w-[15rem] xsm:w-[17.5rem] xmd:w-[20rem] sm:w-[25rem]  lg:w-[45rem] mx-auto"
+        className="w-[15rem] xs:w-[15rem] xsm:w-[17.5rem] xmd:w-[20rem] sm:w-[25rem]  lg:w-[45rem] mx-auto "
         opts={{
           slidesToScroll: {
             xs: 1,
@@ -60,7 +60,7 @@ export default function MenuSection() {
         className="sm:basis-full md:basis-full lg:basis-1/2"
       >
         <div className="p-2">
-          <Card className="overflow-hidden shadow-lg">
+          <Card className="overflow-hidden shadow-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:-translate-y-1">
             <img
               src={item.image}
               alt={item.name}

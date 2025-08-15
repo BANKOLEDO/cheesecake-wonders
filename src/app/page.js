@@ -5,6 +5,7 @@ import CakeMarquee from "@/components/CakeMarquee.client";
 import ScrollReveal from "@/components/ScrollReveal.client";
 import Footer from "@/components/layout/Footer";
 import BlogSection from "@/components/sections/BlogSection";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <CakeMarquee />
       </ScrollReveal>
         <BlogSection />
+        <ContactSection />
       <Footer />
     </div>
   );
