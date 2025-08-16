@@ -23,7 +23,7 @@ export default function ContactSection() {
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: false, amount: 0.2 }} // 👈 also repeat
       >
-        <h1 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-white hover:text-grey-400">
+        <h1 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl 2xl:text-5xl font-bold text-white hover:text-grey-400">
           Contact Us
         </h1>
         <p className="text-center md:text-left mx-4 my-2 md:mx-0 text-lg xs:text-lg xmd:text-md xl:text-xl text-white hover:text-grey-400 font-semibold">

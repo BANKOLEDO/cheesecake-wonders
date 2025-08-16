@@ -57,7 +57,7 @@ export default function BlogSection() {
   return (
     <section id="blog" className="scroll-mt-20 px-6 sm:px-6 md:px-10 lg:px-20 py-10 flex flex-col items-center">
       
-      <h1 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl xl:text-5xl 2xl:text-5xl p-3 font-bold text-primary mx-4 md:mx-0 text-center hover:text-orange-900">Our Latest Blog Posts</h1>
+      <h1 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl 2xl:text-5xl p-3 font-bold text-primary mx-4 md:mx-0 text-center hover:text-orange-900">Our Latest Blog Posts</h1>
       <div className="
         grid gap-6
         grid-cols-1 

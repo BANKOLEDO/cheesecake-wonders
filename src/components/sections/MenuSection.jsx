@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Button } from "../ui/button"
-import SplitText from "../ui/SplitText"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import {
   Carousel,
@@ -41,7 +40,7 @@ const menuItems = [
 export default function MenuSection() {
   return (
     <section id="menu" className="scroll-mt-20 px-5 py-8 space-y-8 md:px-20 flex flex-col items-center">
-        <h1 className="text-xl xs:text-3xl text-center xmd:text-4xl md:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-primary mx-4 md:mx-0 hover:text-orange-900">Our Cheesecake Menu</h1>
+        <h1 className="text-xl xs:text-3xl text-center xmd:text-4xl md:text-4xl 2xl:text-5xl font-bold text-primary mx-4 md:mx-0 hover:text-orange-900">Our Cheesecake Menu</h1>
       <Carousel 
         className="w-[15rem] xs:w-[15rem] xsm:w-[17.5rem] xmd:w-[20rem] sm:w-[25rem]  lg:w-[45rem] mx-auto "
         opts={{

@@ -97,4 +97,7 @@ a {
     @apply text-foreground hover:text-white hover:bg-foreground
   }
 
+  .p-style {
+    @apply mt-4 text-lg xl:text-xl 2xl:text-2xl text-pink-950 font-semibold
+  }
 }
