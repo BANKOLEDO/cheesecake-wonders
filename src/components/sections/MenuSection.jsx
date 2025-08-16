@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Button } from "../ui/button"
+import SplitText from "../ui/SplitText"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import {
   Carousel,
@@ -8,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+
 
 const menuItems = [
   {
@@ -38,11 +40,23 @@ const menuItems = [
 
 export default function MenuSection() {
   return (
-    <section id="menu" className="scroll-mt-20 px-5 py-10 md:px-20">
-      <h2 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-center mb-8 text-primary">
-        Our Cheesecake Menu
-      </h2>
-
+    <section id="menu" className="scroll-mt-20 px-5 py-8 space-y-8 md:px-20 flex flex-col items-center">
+      <SplitText
+        text="Our Cheesecake Menu"
+        className="text-xl xs:text-3xl text-center xmd:text-4xl md:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-primary mx-4 md:mx-0 hover:text-orange-900"
+        delay={80}
+        duration={1}
+        ease="power3.out"
+        splitType="words"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        // rootMargin="-100px"
+        textAlign="center"
+        wordWrapper={{
+          style: { display: "inline-block", whiteSpace: "pre" }
+      }}
+      />
       <Carousel 
         className="w-[15rem] xs:w-[15rem] xsm:w-[17.5rem] xmd:w-[20rem] sm:w-[25rem]  lg:w-[45rem] mx-auto "
         opts={{

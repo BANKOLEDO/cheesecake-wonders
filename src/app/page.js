@@ -30,7 +30,7 @@ export default function Home() {
         <MenuSection />
       </ScrollReveal>
 
-      <ScrollReveal delay={0.4}>
+      <ScrollReveal delay={0.5}>
         <CakeMarquee />
       </ScrollReveal>
       <BlogSection />
