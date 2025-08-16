@@ -91,7 +91,7 @@ const scrollToSection = (id) => {
         <div className="fixed inset-0 bg-[#FFF8E7]/90 flex flex-col items-center pt-10 space-y-8 md:hidden z-40">
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-6 right-[4%]"
+            className="absolute top-8 right-[5%]"
           >
             <Image
               src="/images/icon-close.svg"
