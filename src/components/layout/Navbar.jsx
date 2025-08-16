@@ -49,7 +49,7 @@ const scrollToSection = (id) => {
         </button>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex md:flex-row md:justify-between items-centertext-white space-x-8 bg-primary rounded-md shadow-lg">
+        <div className="hidden md:flex md:flex-row md:justify-evenly items-centertext-white space-x-2 xl:space-x-4 bg-primary rounded-md shadow-lg">
           <button onClick={() => scrollToSection("home")} className="nav-item hover-white">
             Home
           </button>
@@ -58,6 +58,9 @@ const scrollToSection = (id) => {
           </button>
           <button onClick={() => scrollToSection("menu")} className="nav-item hover-white">
             Menu
+          </button>
+          <button onClick={() => scrollToSection("blog")} className="nav-item hover-white">
+            Blog
           </button>
           <button onClick={() => scrollToSection("contact")} className="nav-item hover-white">
             Contact
@@ -105,6 +108,9 @@ const scrollToSection = (id) => {
           </button>
           <button onClick={() => scrollToSection("menu")} className="nav-item hover-brown">
             Menu
+          </button>
+          <button onClick={() => scrollToSection("blog")} className="nav-item hover-brown">
+            Blog
           </button>
           <button onClick={() => scrollToSection("contact")} className="nav-item hover-brown">
             Contact
