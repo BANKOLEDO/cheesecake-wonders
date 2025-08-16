@@ -1,4 +1,7 @@
+"use client";
+
 import { Button } from "../ui/button";
+import { motion } from "framer-motion";
 
 export default function AboutSection() {
     return (
@@ -16,7 +19,20 @@ export default function AboutSection() {
                 <Button size="lg">Read More</Button>
             </div>
             </div>
-            <img src="/images/about-cheesecake.png" alt="About Cheesecake" className="w-full my-5 mx-auto md:mx-0 md:max-w-md lg:max-w-xl" />
+           {/*  Animated Cheesecake Image */}
+        <motion.img
+            src="/images/about-cheesecake.png"
+            alt="Hero Cheesecake"
+            className="my-5 mx-auto md:mx-0 w-full md:max-w-md lg:max-w-xl"
+            animate={{
+                y: [0, -20, 0], // bounce up & down
+            }}
+            transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+            }}
+        />
         </section>
     )
 }

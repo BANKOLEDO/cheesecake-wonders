@@ -33,8 +33,10 @@ export default function Home() {
       <ScrollReveal delay={0.4}>
         <CakeMarquee />
       </ScrollReveal>
-        <BlogSection />
+      <BlogSection />
+      
         <ContactSection />
+      
       <Footer />
     </div>
   );

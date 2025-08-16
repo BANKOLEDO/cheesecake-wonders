@@ -97,7 +97,4 @@ a {
     @apply text-foreground hover:text-white hover:bg-foreground
   }
 
-  .input-class {
-    @apply bg-background text-primary 
-  }
 }
