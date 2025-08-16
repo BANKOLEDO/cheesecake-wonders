@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import ScrollReveal from "@/components/ScrollReveal.client";
 import { Button } from "../ui/button";
-import SplitText from "../ui/SplitText";
+
 // Static blog data with fixed release dates
 const blogs = [
   {
@@ -55,23 +55,9 @@ const blogs = [
 ]
 export default function BlogSection() {
   return (
-    <section id="blog" className="scroll-mt-20 px-6 sm:px-6 md:px-10 lg:px-20 space-y-4 py-10 flex flex-col items-center">
-      <SplitText
-        text="Our Latest Blog Posts"
-        className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl xl:text-5xl 2xl:text-5xl p-3 font-bold text-primary mx-4 md:mx-0 text-center hover:text-orange-900"
-        delay={100}
-        duration={0.5}
-        ease="power3.out"
-        splitType="words"
-        from={{ opacity: 0, y: 40 }}
-        to={{ opacity: 1, y: 0 }}
-        threshold={0.1}
-        // rootMargin="-100px"
-        textAlign="center"
-        wordWrapper={{
-          style: { display: "inline-block", whiteSpace: "pre" }
-        }}
-      />
+    <section id="blog" className="scroll-mt-20 px-6 sm:px-6 md:px-10 lg:px-20 py-10 flex flex-col items-center">
+      
+      <h1 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl xl:text-5xl 2xl:text-5xl p-3 font-bold text-primary mx-4 md:mx-0 text-center hover:text-orange-900">Our Latest Blog Posts</h1>
       <div className="
         grid gap-6
         grid-cols-1 
