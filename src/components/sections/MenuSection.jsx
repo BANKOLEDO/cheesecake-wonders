@@ -21,7 +21,7 @@ const menuItems = [
     name: "Biscoffs Cheesecake",
     description: "A delightful blend of Biscoff cookies and creamy cheesecake.",
     price: "$9.99",
-    image: "/images/biscoff-cheesecake.png"
+    image: "/images/biscoff-cheesecake.webp"
   },
   {
     name: "Chocolate Cheesecake",
@@ -33,7 +33,7 @@ const menuItems = [
     name: "Blueberry Cheesecake",
     description: "A classic blueberry cheesecake topped with fresh blueberries and a hint of lemon.",
     price: "$9.50",
-    image: "/images/blueberry-cheesecake.png"
+    image: "/images/blueberry-cheesecake.webp"
   },
 ]
 

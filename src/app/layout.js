@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="preload" as="image" href="/images/blog-img1.svg" />
-      <link rel="preload" as="image" href="/images/blog-img2.svg" />
-      <link rel="preload" as="image" href="/images/blog-img3.jpg" />
+      <link rel="preload" as="image" href="/images/blog-img1.webp" />
+      <link rel="preload" as="image" href="/images/blog-img2.webp" />
+      <link rel="preload" as="image" href="/images/blog-img3.webp" />
       <body>
-        <Navbar className="mb-10"/>
         <main className="scroll-mt-24">{children}</main>
       </body>
     </html>

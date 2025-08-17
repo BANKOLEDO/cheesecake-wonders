@@ -7,7 +7,7 @@ const blogs = [
   {
     title: "Cheesecake Recipes",
     description: "Discover our collection of delicious cheesecake recipes that will satisfy your sweet tooth.",
-    img: "/images/blog-img1.svg",
+    img: "/images/blog-img1.webp",
     alt: "Cheesecake Recipe",
     content: "Explore the art of cheesecake making with our step-by-step guides and tips for perfecting your cheesecake creations. From classic New York-style to fruity variations, we have recipes for every cheesecake lover. Satisfy your sweet tooth with our delicious cheesecake recipes.",
     date: "Feb 12, 2023",
@@ -15,7 +15,7 @@ const blogs = [
   {
     title: "Cheesecake History",
     description: "Uncover the fascinating history of cheesecake, from its ancient origins to modern variations enjoyed worldwide.",
-    img: "/images/blog-img2.svg",
+    img: "/images/blog-img2.webp",
     alt: "Cheesecake History",
     content: "Journey through time and discover how cheesecake has evolved over the centuries, becoming a beloved dessert in many cultures. Did you know that cheesecake dates back to ancient Greece? Learn about its rich history and how it has transformed into the diverse range of flavors and styles we enjoy today.",
     date: "Jul 8, 2024",
@@ -23,7 +23,7 @@ const blogs = [
   {
     title: "Cheesecake Tips & Tricks",
     description: "Master the cheesecake with professional tips for baking, flavoring, and presentation.",
-    img: "/images/blog-img3.jpg",
+    img: "/images/blog-img3.webp",
     alt: "Cheesecake Tips",
     content: "Learn the secrets to making creamy, perfectly baked cheesecakes every time with insider baking techniques. Start impressing your friends and family with your cheesecake skills. From crust perfection to flavor combinations, our tips will elevate your cheesecake game.",
     date: "Nov 21, 2025",
@@ -31,7 +31,7 @@ const blogs = [
   {
     title: "Mini Cheesecakes",
     description: "Perfect bite-sized cheesecakes for parties and gatherings.",
-    img: "/images/blog-img2.svg",
+    img: "/images/blog-img2.webp",
     alt: "Mini Cheesecake",
     content: "Mini cheesecakes that are easy to serve and fun to enjoy. Whether you're hosting a party or just want a small treat, these mini cheesecakes are the perfect solution. With various flavors and toppings, they are sure to be a hit at any gathering.",
     date: "Mar 15, 2023",
@@ -39,7 +39,7 @@ const blogs = [
   {
     title: "Vegan Cheesecakes",
     description: "Delicious plant-based alternatives that everyone will love.",
-    img: "/images/blog-img3.jpg",
+    img: "/images/blog-img3.webp",
     alt: "Vegan Cheesecake",
     content: "Creamy vegan cheesecakes made with wholesome ingredients. Healthy and indulgent, these vegan cheesecakes are perfect for those who want to enjoy a guilt-free dessert. Made with cashews, coconut cream, and natural sweeteners, they are both delicious and nutritious.",
     date: "Sep 9, 2024",
@@ -47,7 +47,7 @@ const blogs = [
   {
     title: "Chocolate Lovers",
     description: "Indulge in decadent chocolate cheesecake creations. ",
-    img: "/images/blog-img1.svg",
+    img: "/images/blog-img1.webp",
     alt: "Chocolate Cheesecake",
     content: "Rich, creamy chocolate cheesecakes for the ultimate dessert experience. Every bite is a chocolate lover's dream come true. From classic chocolate to unique flavor combinations, our chocolate cheesecakes are sure to satisfy your cravings.",
     date: "Dec 1, 2025",

@@ -21,7 +21,7 @@ export default function AboutSection() {
             </div>
            {/*  Animated Cheesecake Image */}
         <motion.img
-            src="/images/about-cheesecake.png"
+            src="/images/about-cheesecake.webp"
             alt="Hero Cheesecake"
             className="image-responsive"
             animate={{

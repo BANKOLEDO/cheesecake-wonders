@@ -40,7 +40,7 @@ export default function HeroSection() {
 
       {/*  Animated Cheesecake Image */}
       <motion.img
-        src="/images/hero-cheesecake.png"
+        src="/images/hero-cheesecake.webp"
         alt="Hero Cheesecake"
         className="image-responsive"
         animate={{
