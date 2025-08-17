@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
     return (
-        <section id="about" className="scroll-mt-20 w-[20rem] min-w-[85vw] p-3 mx-auto flex flex-col md:flex-row-reverse items-center bg-red-200 rounded-lg md:justify-between text-center mt-20">
+        <section id="about" className="scroll-mt-[50rem] w-[20rem] min-w-[85vw] p-3 mx-auto flex flex-col md:flex-row-reverse items-center bg-red-200 rounded-lg md:justify-between text-center">
             <div className="flex flex-col text-center md:items-start md:text-left lg:p-2 gap-2 xl:pr-20">
                 <h1 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl 2xl:text-5xl font-bold text-primary mx-4 md:mx-0 hover:text-orange-900">We Love Cheesecake</h1>
                 <h2 className="text-xl xmd:text-md lg:text-3xl  font-semibold text-primary hover:text-orange-900">Discover Our Cheesecake Story</h2>

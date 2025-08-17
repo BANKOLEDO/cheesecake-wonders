@@ -7,7 +7,7 @@ export default function ScrollReveal({ children, delay = 0, ...motionProps }) {
     <section className="will-change-transform">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y:40 }}
+        whileInView={{ opacity: 1, y: 60 }}
         viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 0.6, delay }}
         {...motionProps}

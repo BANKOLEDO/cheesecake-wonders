@@ -21,7 +21,7 @@ export default function Navbar() {
 const scrollToSection = (id) => {
   const section = document.getElementById(id);
   if (section) {
-    const headerOffset = 100; // height of your fixed navbar in px
+    const headerOffset = 150; // height of your fixed navbar in px
     const elementPosition = section.getBoundingClientRect().top + window.scrollY;
     const offsetPosition = elementPosition - headerOffset;
 
@@ -34,7 +34,7 @@ const scrollToSection = (id) => {
 };
 
   return (
-    <nav className="shadow-md bg-background fixed top-0 left-0 w-full px-[0.5rem] md:px-[2rem] lg:px-[8rem] z-50">
+    <nav className="shadow-md bg-background fixed top-0 h-24 left-0 w-full px-[0.5rem] md:px-[2rem] lg:px-[8rem] z-50">
       <div className="mx-auto md:mx-0 px-4 py-4 flex justify-between md:justify-between items-center">
         {/* Logo */}
         <button onClick={() => scrollToSection("home")}>

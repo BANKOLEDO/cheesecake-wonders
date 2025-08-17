@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
       <link rel="preload" as="image" href="/images/blog-img2.svg" />
       <link rel="preload" as="image" href="/images/blog-img3.jpg" />
       <body>
-        <Navbar />
-        <main>{children}</main>
+        <Navbar className="mb-10"/>
+        <main className="scroll-mt-24">{children}</main>
       </body>
     </html>
   );

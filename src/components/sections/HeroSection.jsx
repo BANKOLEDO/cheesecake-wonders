@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="scroll-mt-20 w-[20rem] min-w-[85vw] p-3 mx-auto flex flex-col md:flex-row items-center md:justify-between text-center mt-20 bg-red-200 rounded-lg"
+      className="mt-[1.8rem] w-[20rem] min-w-[85vw] p-3 mx-auto flex flex-col md:flex-row items-center md:justify-between text-center bg-red-200 rounded-lg"
     >  
       <div className="flex flex-col text-center md:items-start md:text-left lg:p-2">
         <SplitText
