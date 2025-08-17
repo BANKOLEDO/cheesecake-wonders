@@ -66,7 +66,7 @@ export default function BlogSection() {
         items-stretch 
         max-w-7xl 
         mx-auto
-        pb-20
+        pb-[3rem]
       ">
         {blogs.map((blog, index) => (
           <ScrollReveal key={index} delay={index * 0.15}>

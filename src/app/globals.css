@@ -100,4 +100,12 @@ a {
   .p-style {
     @apply mt-4 text-lg xl:text-xl 2xl:text-2xl text-pink-950 font-semibold
   }
+
+  .icon-width {
+    @apply w-[2.2rem] xsm:w-[2.5rem]
+  }
+
+  .image-responsive {
+    @apply my-5 mx-auto md:mx-0 w-full sm:max-w-xs lg:max-w-md xl:max-w-lg
+  }
 }

@@ -1,11 +1,27 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto text-center">
-        <p className="text-sm">© 2025 Cheesecake Wonders. All rights reserved.</p>
-        <p className="text-xs mt-2">Crafted with love and cheesecake.</p>
+    <footer className="w-full flex bg-red-900 flex-col space-y-2 text-primary-foreground py-4">
+        <div className="w-full flex flex-col lg:flex-row lg:justify-evenly items-center space-y-6 lg:space-y-0 text-primary-foreground py-6">
+          <ul className="flex flex-row items-center justify-center gap-8">
+            <li>
+              <a href=""><img src="/images/facebook.svg" alt="facebook-icon"  className="icon-width"/></a>
+            </li>
+            <li>
+              <a href=""><img src="/images/instagram.svg" alt="instagram-icon" className="icon-width"/></a>
+            </li>
+            <li>
+              <a href=""><img src="/images/twitter.svg" alt="twitter-icon" className="icon-width"/></a>
+            </li>
+            <li>
+              <a href=""><img src="/images/youtube.svg" alt="youtube-icon" className="icon-width"/></a>
+            </li>
+        </ul>
+        <div className="text-center font-bold">
+            <p className="text-xs xsm:text-sm md:text-lg">© 2025 Cheesecake Wonders. All rights reserved.</p>
+        </div>
       </div>
+      <p className="text-xs md:text-sm text-center mt-2 lg:mt-0">Built with &#10084; by Olabanks.</p>
     </footer>
   );
 }

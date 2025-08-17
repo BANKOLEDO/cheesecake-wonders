@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="mt-[1.8rem] w-[20rem] min-w-[85vw] p-3 mx-auto flex flex-col md:flex-row items-center md:justify-between text-center bg-red-200 rounded-lg"
+      className="mt-[1.8rem] w-[20rem] min-w-[85vw] p-3 mx-auto flex flex-col md:flex-row items-center md:justify-between text-center bg-red-200 gap-4 rounded-lg"
     >  
       <div className="flex flex-col text-center md:items-start md:text-left lg:p-2">
         <SplitText
@@ -42,7 +42,7 @@ export default function HeroSection() {
       <motion.img
         src="/images/hero-cheesecake.png"
         alt="Hero Cheesecake"
-        className="my-5 mx-auto md:mx-0 w-full md:max-w-sm lg:max-w-xl"
+        className="image-responsive"
         animate={{
           y: [0, -20, 0], // bounce up & down
         }}

@@ -13,7 +13,7 @@ export default function ContactSection() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false, amount: 0.2 }} // 👈 runs every time it's in view
+      viewport={{ once: false, amount: 0.2 }} // runs every time it's in view
     >
       {/* Left Content */}
       <motion.div
@@ -21,7 +21,7 @@ export default function ContactSection() {
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-        viewport={{ once: false, amount: 0.2 }} // 👈 also repeat
+        viewport={{ once: false, amount: 0.2 }} // also repeat
       >
         <h1 className="text-xl xs:text-3xl xmd:text-4xl md:text-4xl 2xl:text-5xl font-bold text-white hover:text-grey-400">
           Contact Us
