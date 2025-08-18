@@ -59,7 +59,17 @@ npm run start
 
 ## 📸 Preview
 
-*Add a screenshot or demo GIF here for better presentation.*
+Mobile View
+
+![Mobile View](./screenshot/Mobile%20View.PNG)
+
+Tablet View
+
+![Tablet View](./screenshot/Tablet%20View.PNG)
+
+Desktop View
+
+![Desktop View](./screenshot/Desktop%20View.PNG)
 
 ---
 

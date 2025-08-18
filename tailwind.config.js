@@ -9,9 +9,21 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        scroll1: "scroll 15s linear infinite",
+        scroll2: "scroll 20s linear infinite",
+        scroll3: "scroll 25s linear infinite",
+      },
 		screens: {
 			xs: '320px', 
 			xsm: '390px',
+			xmd: '420px',
 		},
   		borderRadius: {
   			lg: 'var(--radius)',

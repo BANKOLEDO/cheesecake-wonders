@@ -15,7 +15,7 @@ export const metadata = {
   title: "Cheesecake Wonders",
   description: "Explore a world of delicious cheesecake options",
   icons: {
-    icon: '/images/favicon.jpg', // point to your new file
+    icon: '/images/favicon.jpg',
   },
 };
 
