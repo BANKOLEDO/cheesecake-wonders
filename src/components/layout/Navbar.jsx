@@ -39,7 +39,7 @@ const scrollToSection = (id) => {
         {/* Logo */}
         <button onClick={() => scrollToSection("home")}>
           <Image
-            src="/images/cheesecake-wonders-logo.png"
+            src="/images/cheesecake-wonders-logo.webp"
             alt="Cheesecake Wonders Logo"
             width={80}
             height={80}
@@ -76,7 +76,7 @@ const scrollToSection = (id) => {
           {!isOpen && (
             <button onClick={() => setIsOpen(true)}>
               <Image
-                src="/images/icon-hamburger.webp"
+                src="/images/icon-hamburger.svg"
                 alt="Open menu"
                 width={24}
                 height={24}
