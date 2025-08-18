@@ -32,7 +32,7 @@ export default function ContactSection() {
           below.
         </p>
         <img
-          src="/images/contact-cheesecake.png"
+          src="/images/contact-cheesecake.webp"
           alt="Contact Cheesecake"
           className="hidden md:flex w-full max-w-md mb-6 md:mb-0"
         />

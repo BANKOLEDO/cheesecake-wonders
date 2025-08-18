@@ -15,7 +15,7 @@ const menuItems = [
     name: "Lemon Cheesecake",
     description: "A refreshing lemon cheesecake with a buttery crust, perfect for citrus lovers.",
     price: "$8.99",
-    image: "/images/lemon-cheesecake.png"
+    image: "/images/lemon-cheesecake.webp"
   },
   {
     name: "Biscoffs Cheesecake",
@@ -27,7 +27,7 @@ const menuItems = [
     name: "Chocolate Cheesecake",
     description: "Rich and creamy chocolate cheesecake with a chocolate cookie crust.",
     price: "$10.50",
-    image: "/images/chocolate-cheesecake.png"
+    image: "/images/chocolate-cheesecake.webp"
   },
   {
     name: "Blueberry Cheesecake",

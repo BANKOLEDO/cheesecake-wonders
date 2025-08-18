@@ -76,7 +76,7 @@ const scrollToSection = (id) => {
           {!isOpen && (
             <button onClick={() => setIsOpen(true)}>
               <Image
-                src="/images/icon-hamburger.svg"
+                src="/images/icon-hamburger.webp"
                 alt="Open menu"
                 width={24}
                 height={24}

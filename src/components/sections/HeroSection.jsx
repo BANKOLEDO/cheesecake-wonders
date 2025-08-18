@@ -32,10 +32,8 @@ export default function HeroSection() {
         </p>
         <div className="mt-10 flex gap-4 justify-center">
           <Button size="lg">Get Started</Button>
-          <Button variant="outline" size="lg">
-            Watch Demo
-          </Button>
-        </div>
+          <Button variant="outline" size="lg"> Watch Demo </Button>
+          </div>
       </div>
 
       {/*  Animated Cheesecake Image */}
