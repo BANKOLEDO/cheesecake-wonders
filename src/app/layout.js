@@ -14,11 +14,15 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Cheesecake Wonders",
   description: "Explore a world of delicious cheesecake options",
+  icons: {
+    icon: '/images/favicon.jpg', // point to your new file
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/images/favicon.png" type="image/png" />
       <link rel="preload" as="image" href="/images/blog-img1.webp" />
       <link rel="preload" as="image" href="/images/blog-img2.webp" />
       <link rel="preload" as="image" href="/images/blog-img3.webp" />
