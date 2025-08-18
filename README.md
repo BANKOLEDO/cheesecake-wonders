@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍰 Cheesecake Wonders Landing Page
 
-## Getting Started
+A modern and elegant landing page for **Cheesecake Wonders**, crafted with cutting-edge frontend technologies to deliver smooth animations, responsive design, and a delightful user experience.
 
-First, run the development server:
+---
+
+## 🚀 Tech Stack
+
+- **Next.js** – React framework for building optimized web applications  
+- **Tailwind CSS** – Utility-first CSS framework for styling  
+- **shadcn/ui** – Accessible and reusable UI components  
+- **GSAP** – Advanced animations and scroll effects  
+- **Framer Motion** – React animation library for micro-interactions  
+- **Lucide React** – Beautiful, consistent icons  
+
+---
+
+## ✨ Features
+
+- Responsive, mobile-first design  
+- Smooth scroll-based animations with GSAP  
+- Framer Motion transitions for interactive UI  
+- Modern and accessible UI components with shadcn  
+- Iconography powered by Lucide React  
+- Clean and maintainable codebase  
+
+---
+
+## 🛠 Installation & Setup
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/cheesecake-wonders.git
+cd cheesecake-wonders
+npm install
+````
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build
 
-## Learn More
+To create a production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 Preview
 
-## Deploy on Vercel
+*Add a screenshot or demo GIF here for better presentation.*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to fork the repo and submit a pull request.
+

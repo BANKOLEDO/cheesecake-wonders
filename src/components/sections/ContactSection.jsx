@@ -9,7 +9,7 @@ export default function ContactSection() {
   return (
     <motion.section
       id="contact"
-      className="scroll-mt-20 bg-primary px-6 sm:px-6 md:px-10 lg:px-20 text-center py-7 flex flex-col md:flex-row justify-center items-center gap-3 md:items-start md:justify-center mx-5 sm:mx-8 md:mx-10 xl:mx-12 2xl:mx-auto lg:justify-evenly rounded-lg"
+      className="scroll-mt-20 bg-red-900 px-6 sm:px-6 md:px-10 lg:px-20 text-center py-7 flex flex-col md:flex-row justify-center items-center gap-3 md:items-start md:justify-center mx-5 sm:mx-8 md:mx-10 xl:mx-12 2xl:mx-auto lg:justify-evenly rounded-lg"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
@@ -34,17 +34,17 @@ export default function ContactSection() {
         <img
           src="/images/contact-cheesecake.webp"
           alt="Contact Cheesecake"
-          className="hidden md:flex w-full max-w-md mb-6 md:mb-0"
+          className="hidden md:flex w-full bg-red-200 rounded-md max-w-md mb-6 md:mb-0"
         />
       </motion.div>
 
       {/* Right Form */}
       <motion.form
-        className="w-full bg-card max-w-sm mx-auto xl:mx-0 p-3 grid gap-6 border-4 border-background rounded-md"
+        className="w-full bg-card max-w-sm mx-auto xl:mx-0 p-6 grid gap-6 border-4 border-background rounded-md"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-        viewport={{ once: false, amount: 0.2 }} // 👈 repeats as well
+        viewport={{ once: false, amount: 0.2 }} // repeats
       >
         {/* Name */}
         <div className="flex flex-col">
@@ -79,7 +79,7 @@ export default function ContactSection() {
         {/* Submit */}
         <Button
           type="submit"
-          className="bg-amber-900 text-white hover:bg-amber-800 w-full sm:w-auto mx-auto"
+          className="bg-red-900 text-white hover:bg-red-800 w-full sm:w-auto mx-auto"
         >
           Contact Us Now
         </Button>
