@@ -18,7 +18,7 @@ export default function Footer() {
             </li>
         </ul>
         <div className="text-center font-bold">
-            <p className="text-xs xsm:text-sm md:text-lg">© 2025 Cheesecake Wonders. All rights reserved.</p>
+            <p className="text-xs xsm:text-sm md:text-lg">© 2026 Cheesecake Wonders. All rights reserved.</p>
         </div>
       </div>
       <p className="text-xs md:text-sm text-center mt-2 lg:mt-0">Built with &#10084; by <a href="https://x.com/dev_olabanks" target="blank">@dev_olabanks</a>.</p>
